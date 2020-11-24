@@ -2,7 +2,7 @@ name: 'Aging'
 
 on: [push]
 
-jobs:runs:
+jobs:
   hello_world_job:
     runs-on: node-latest
     name: A job to age you
