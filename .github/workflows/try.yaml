@@ -20,11 +20,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install
       run: npm install
+    - name: set variables
+      with:
+        your-name: ${{ secrets.name }}
+        your-age: ${{ secrets.age }}
+        timespan: '10'
     - name: run file
       run: node index.js
-      inputs:
-        your-name: 'Leesa Marie'
-        your-age: '20'
-        timespan: '10'
 
 
