@@ -1,0 +1,15 @@
+name: 'Feeling Old'
+description: 'Activity 2'
+
+on:
+  pull_request:
+    types: [age]
+
+inputs:
+  with: 
+    yourName: ${{secrets.name}}
+    yourAge:  ${{secrets.age}}
+    additionalYears: 10 
+runs:
+  using: 'node12'
+  main: 'index.js'
