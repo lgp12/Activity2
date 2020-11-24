@@ -13,21 +13,18 @@ jobs:
     steps:
     - name: Git checkout
       uses: actions/checkout@v1
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm install
       run: npm install
-    - name: Checkout
-      uses: actions/checkout@v2
     - name: run
+      uses: ./index.js
       with:
         your-name: ${{ secrets.name }}
         your-age: ${{ secrets.age }}
         timespan: '10'
-      uses: ./Activity2/index.js
 
 
 
