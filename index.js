@@ -1,6 +1,5 @@
 const core = require('@actions/core');
-const github = require('@actions/github');
-console.log("what");
+
 try {
     let name = core.getInput('yourName');
     let age = core.getInput('yourAge');
