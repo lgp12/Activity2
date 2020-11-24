@@ -1,8 +1,5 @@
 name: 'Feeling Old'
 
-# on:
-#   pull_request:
-#     types: [age]
 
 on: [push]
 
