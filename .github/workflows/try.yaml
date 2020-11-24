@@ -20,7 +20,7 @@ jobs:
     - name: npm install
       run: npm install
     - name: run
-      uses: ././action.js
+      uses: ../../action.js
       with:
         your-name: ${{ secrets.name }}
         your-age: ${{ secrets.age }}
