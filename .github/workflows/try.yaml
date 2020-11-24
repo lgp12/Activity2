@@ -25,6 +25,6 @@ jobs:
         your-name: 'Leesa Marie'
         your-age: '20'
         timespan: '10'
-      uses: node index.js
+      uses: run: node index.js
 
 
