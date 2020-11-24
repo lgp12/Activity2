@@ -20,12 +20,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install
       run: npm install
-    - name: set variables
+    - name: run
       with:
         your-name: ${{ secrets.name }}
         your-age: ${{ secrets.age }}
         timespan: '10'
-    - name: run file
-      run: node index.js
+      uses: ./Activity2/index.js
+
 
 
