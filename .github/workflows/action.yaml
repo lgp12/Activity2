@@ -5,11 +5,31 @@ on:
   pull_request:
     types: [age]
 
-inputs:
-  with: 
-    yourName: ${{secrets.name}}
-    yourAge:  ${{secrets.age}}
-    additionalYears: 10 
-runs:
-  using: 'node12'
-  main: 'index.js'
+jobs:  
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x, 13.x]
+
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v1
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        yourName: ${{secrets.name}}
+        yourAge:  ${{secrets.age}}
+        additionalYears: 10 
+
+    - npm install
+      env:
+        CI: true
+
+    - npm test
+      env:
+        CI: true
+
+
