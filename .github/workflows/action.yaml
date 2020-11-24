@@ -2,9 +2,9 @@ name: 'Aging'
 
 on: [push]
 
-jobs:
+jobs:runs:
   hello_world_job:
-    runs-on: ubuntu-latest
+    runs-on: node-latest
     name: A job to age you
     steps:
     - name: Checkout
