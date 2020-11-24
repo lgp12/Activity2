@@ -5,11 +5,11 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to age you
     steps:
     - name: New Age step
       id: newage
-      uses: actions/hello-world-javascript-action@v1.1
+      uses: ../../index.js
       with:
         your-name: 'Leesa Marie'
         your-age: '20'
