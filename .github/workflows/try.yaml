@@ -1,0 +1,9 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+with:
+  your-name: 'Leesa Marie'
+  your-age: '20'
+  timespan: '10'
+runs:
+  using: 'node12'
+  main: 'index.js'
