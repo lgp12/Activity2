@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@v2
     - name: New Age step
       id: newage
-      uses: ./
+      uses: ./index.js
       with:
         your-name: 'Leesa Marie'
         your-age: '20'
