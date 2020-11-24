@@ -21,10 +21,10 @@ jobs:
     - name: npm install
       run: npm install
     - name: run file
+      run: node index.js
       inputs:
         your-name: 'Leesa Marie'
         your-age: '20'
         timespan: '10'
-      run: node index.js
 
 
