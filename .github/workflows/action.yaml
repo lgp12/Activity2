@@ -5,7 +5,10 @@ name: 'Feeling Old'
 #     types: [age]
 
 on: [push]
-
+with: 
+  yourName: ${{secrets.name}}
+  yourAge:  ${{secrets.age}}
+  additionalYears: 10
 jobs:
   build:
 
@@ -17,10 +20,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      with: 
-        yourName: ${{secrets.name}}
-        yourAge:  ${{secrets.age}}
-        additionalYears: 10
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }} 
