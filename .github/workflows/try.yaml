@@ -22,4 +22,9 @@ jobs:
       run: npm install
     - name: run file
       run: node index.js
+      with:
+        your-name: 'Leesa Marie'
+        your-age: '20'
+        timespan: '10'
+
 
