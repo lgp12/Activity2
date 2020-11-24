@@ -1,10 +1,10 @@
 name: 'Feeling Old'
 description: 'Activity 2'
 
-on:
-  pull_request:
-    types: [age]
-
+# on:
+#   pull_request:
+#     types: [age]
+on: [push]
 jobs:  
   build:
     runs-on: ubuntu-latest
