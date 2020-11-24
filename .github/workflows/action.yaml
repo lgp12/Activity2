@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to age you
     steps:
-      name: Checkout
+    - name: Checkout
       uses: actions/checkout@v2
     - name: New Age step
       id: newage
