@@ -2,10 +2,11 @@ name: 'Hello World'
 description: 'Greet someone and record the time'
 on: [push]
 jobs:
-  with:
-    your-name: 'Leesa Marie'
-    your-age: '20'
-    timespan: '10'
-  runs:
-    using: 'node12'
-    main: 'index.js'
+  steps:
+    with:
+      your-name: 'Leesa Marie'
+      your-age: '20'
+      timespan: '10'
+    runs:
+      using: 'node12'
+      main: 'index.js'
