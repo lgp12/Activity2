@@ -20,11 +20,11 @@ jobs:
     - name: npm install
       run: npm install
     - name: run
-      uses: ./
-      with:
-        your-name: ${{ secrets.name }}
-        your-age: ${{ secrets.age }}
-        timespan: '10'
+      run: node action.js
+        with:
+          your-name: ${{ secrets.name }}
+          your-age: ${{ secrets.age }}
+          timespan: '10'
 
 
 
