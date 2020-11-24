@@ -18,5 +18,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - npm install
-    - npm index.js
+    - name: npm install
+      run: npm install
+    - name: run file
+      run: npm index.js
+
