@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: New Age step
       id: newage
-      uses: ../../index.js
+      uses: index.js
       with:
         your-name: 'Leesa Marie'
         your-age: '20'
