@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to age you
     steps:
+      name: Checkout
+      uses: actions/checkout@v2
     - name: New Age step
       id: newage
-      uses: index.js
+      uses: ./
       with:
         your-name: 'Leesa Marie'
         your-age: '20'
