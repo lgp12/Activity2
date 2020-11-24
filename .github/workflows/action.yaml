@@ -4,14 +4,16 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     name: A job to age you
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: New Age step
       id: newage
-      uses: index.js
+      runs:
+        using: 'node12'
+        main: 'index.js'
       with:
         your-name: 'Leesa Marie'
         your-age: '20'
