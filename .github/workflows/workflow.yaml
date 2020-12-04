@@ -23,7 +23,7 @@ jobs:
       uses: ./actions
       with:
         NAME: ${{ secrets.NAME }}
-        AGE: 10
+        AGE: ${{ secrets.AGE }}
         TIMESPAN: '10'
 
 
