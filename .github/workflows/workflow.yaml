@@ -1,9 +1,8 @@
 
 name: 'Aging'
 
-on: [pull_request]
-  label:
-    types: [age]
+on: pull_request
+  types: [age]
 
 jobs:  
   build:
