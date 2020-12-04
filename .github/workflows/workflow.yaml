@@ -1,7 +1,9 @@
 
 name: 'Aging'
 
-on: [push]
+on: [pull]
+  label:
+    types: [age]
 
 jobs:  
   build:
