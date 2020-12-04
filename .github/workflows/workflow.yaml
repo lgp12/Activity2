@@ -23,10 +23,8 @@ jobs:
       uses: ./actions
       with:
         NAME: ${{ secrets.NAME }}
-        AGE: ${{ secrets.AGE }}
+        AGE: 10
         TIMESPAN: '10'
-    - name: print
-      run: echo NAME | sed -e 's/\(.\)/\1 /g'
 
 
 
