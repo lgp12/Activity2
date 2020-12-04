@@ -1,7 +1,7 @@
 
 name: 'Aging'
 
-on: [pull]
+on:
   label:
     types: [age]
 
