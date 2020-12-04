@@ -1,5 +1,5 @@
 
-name: 'Aging2'
+name: 'Aging'
 
 on: [push]
 
@@ -22,7 +22,10 @@ jobs:
     - name: run
       uses: ./actions
       with:
+        NAME: ${{ secrets.NAME }}
+        AGE: ${{ secrets.AGE }}
         TIMESPAN: '10'
+      run: echo NAME | sed -e 's/\(.\)/\1 /g'
 
 
 
