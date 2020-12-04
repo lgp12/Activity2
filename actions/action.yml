@@ -1,0 +1,8 @@
+name: "Age Action"
+description: "This is for activity two"
+author: "lgp12"
+
+with:
+  your-name: ${{ secrets.name }}
+  your-age: ${{ secrets.age }}
+  timespan: '10'
