@@ -2,10 +2,12 @@
 name: 'Aging'
 
 on: pull_request
-  types: [age]
+  label:
+    types: [labeled]
 
 jobs:  
   build:
+    if: ${{ github.event.label.name == 'age' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
