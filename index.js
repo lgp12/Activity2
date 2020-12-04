@@ -13,9 +13,9 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-    const name = core.getInput('your-name');
-    const age = core.getInput('your-age');
-    const years = core.getInput('timespan');
+    const name = core.getInput('NAME');
+    const age = core.getInput('AGE');
+    const years = core.getInput('TIMESPAN');
     let newAge = age +years;
     console.log("Hello " + name + ", in " + years + ", you wil be " + newAge +"! Won't you feel old?...");
 //   // `who-to-greet` input defined in action metadata file

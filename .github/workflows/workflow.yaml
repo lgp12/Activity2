@@ -20,7 +20,11 @@ jobs:
     - name: npm install
       run: npm install
     - name: variables
-      uses: ../actions/action.yml
+      uses: ./actions
+      with:
+        NAME: ${{ secrets.name }}
+        AGE: ${{ secrets.age }}
+        TIMESPAN: '10'
     - name: run
       run: npm index.js
 
