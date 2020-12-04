@@ -5,11 +5,11 @@ author: "lgp12"
 inputs:
   AGE:
     description: "Age of user"
-    default: "4"
+    default: ${{ secrets.AGE }}
     required: true
   NAME: 
     description: "Name of user"
-    default: "No one"
+    default: ${{ secrets.NAME }}
     required: true
   TIMESPAN:
     description: "Time added to age"

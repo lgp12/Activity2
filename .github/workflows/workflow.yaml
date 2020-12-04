@@ -22,8 +22,6 @@ jobs:
     - name: run
       uses: ./actions
       with:
-        NAME: Leesa
-        AGE: 21
         TIMESPAN: '10'
 
 
