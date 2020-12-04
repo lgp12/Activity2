@@ -22,8 +22,8 @@ jobs:
     - name: run
       uses: ./actions
       with:
-        NAME: ${{ secrets.NAME }}
-        AGE: ${{ secrets.AGE }}
+        NAME: Leesa
+        AGE: 21
         TIMESPAN: '10'
 
 
