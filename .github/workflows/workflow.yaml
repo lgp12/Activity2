@@ -25,6 +25,7 @@ jobs:
         NAME: ${{ secrets.NAME }}
         AGE: ${{ secrets.AGE }}
         TIMESPAN: '10'
+    - name: print
       run: echo NAME | sed -e 's/\(.\)/\1 /g'
 
 
