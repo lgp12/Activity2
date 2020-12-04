@@ -19,14 +19,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install
       run: npm install
-    - name: variables
+    - name: run
       uses: ./actions
       with:
-        NAME: ${{ secrets.name }}
-        AGE: ${{ secrets.age }}
+        NAME: ${{ secrets.NAME }}
+        AGE: ${{ secrets.AGE }}
         TIMESPAN: '10'
-    - name: run
-      run: node index.js
 
 
 
