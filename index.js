@@ -7,7 +7,7 @@ try {
     const years = Number(core.getInput('TIMESPAN'));
     let newAge = age + years;
 
-    console.log("Hello " + name + ", in " + years + " years, you wil be " + newAge +"! Won't you feel old?....");
+    console.log("Hello " + name + ", in " + years + " years, you wil be " + newAge +"! Won't you feel old?...");
 } catch (error) {
   core.setFailed(error.message);
 }
