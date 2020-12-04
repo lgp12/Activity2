@@ -16,5 +16,5 @@ inputs:
     default: "2"
     required: true
 runs:
-  using: 'node13'
+  using: 'node12'
   main: 'index.js'
